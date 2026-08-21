@@ -1,0 +1,11 @@
+.venv/
+dl/
+comp/
+research/nb/
+work/aicomp_sdk
+__pycache__/
+*.pyc
+*.gguf
+*.zip
+err.txt
+.DS_Store

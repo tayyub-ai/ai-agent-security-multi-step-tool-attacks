@@ -1,0 +1,128 @@
+[{"stream_name":"stderr","time":6.865934555,"data":"/usr/local/lib/python3.12/dist-packages/nbformat/__init__.py:96: MissingIDFieldWarning: Cell is missing an id field, this will become a hard error in future nbformat versions. You may want to use `normalize()` on your notebooks before validations (available since nbformat 5.1.4). Previous versions of nbformat are fixing this issue transparently, and will stop doing so in the future.\n"}
+,{"stream_name":"stderr","time":6.86599119,"data":"  validate(nb)\n"}
+,{"stream_name":"stderr","time":8.004385999,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":8.004430341,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":8.004454297,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":8.004459918,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stderr","time":8.827272863,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":8.827320659,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":8.827328791,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":8.827334778,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stdout","time":10.185633047,"data":"attack.py written: 11722 chars\n"}
+,{"stream_name":"stdout","time":14.14425742,"data":"\n"}
+,{"stream_name":"stdout","time":14.144294123,"data":"############################################################\n"}
+,{"stream_name":"stdout","time":14.144301577,"data":"[GATEWAY] Starting full evaluation\n"}
+,{"stream_name":"stdout","time":14.144307009,"data":"[GATEWAY]   Models: ['gpt_oss', 'gemma']\n"}
+,{"stream_name":"stdout","time":14.144313065,"data":"[GATEWAY]   Guardrails: ['public']\n"}
+,{"stream_name":"stdout","time":14.144319201,"data":"[GATEWAY]   Remote models: {'gemma', 'gpt_oss'}\n"}
+,{"stream_name":"stdout","time":14.14432474,"data":"[GATEWAY]   Fixtures dir: /kaggle/input/competitions/ai-agent-security-multi-step-tool-attacks/aicomp_sdk/fixtures\n"}
+,{"stream_name":"stdout","time":14.144331039,"data":"############################################################\n"}
+,{"stream_name":"stdout","time":14.144337987,"data":"\n"}
+,{"stream_name":"stdout","time":14.144348753,"data":"\n"}
+,{"stream_name":"stdout","time":14.144352468,"data":"************************************************************\n"}
+,{"stream_name":"stdout","time":14.144356225,"data":"[GATEWAY] Model 1/2: gpt_oss\n"}
+,{"stream_name":"stdout","time":14.144359906,"data":"************************************************************\n"}
+,{"stream_name":"stdout","time":14.144363695,"data":"\n"}
+,{"stream_name":"stdout","time":14.144367545,"data":"============================================================\n"}
+,{"stream_name":"stdout","time":14.144371228,"data":"[ATTACK] Starting attack for model=gpt_oss\n"}
+,{"stream_name":"stdout","time":14.144374831,"data":"[ATTACK]   guardrail=Guardrail\n"}
+,{"stream_name":"stdout","time":14.144378409,"data":"[ATTACK]   budget_s=8750.0, seed=123\n"}
+,{"stream_name":"stdout","time":14.144382071,"data":"============================================================\n"}
+,{"stream_name":"stdout","time":14.14438567,"data":"[ATTACK][gpt_oss] Building agent factory...\n"}
+,{"stream_name":"stdout","time":14.144389272,"data":"[ATTACK][gpt_oss] Building attack env...\n"}
+,{"stream_name":"stdout","time":14.518713631,"data":"[ATTACK][gpt_oss] Env built in 0.4s\n"}
+,{"stream_name":"stdout","time":14.51875631,"data":"[ATTACK][gpt_oss] Sending init command to inference server...\n"}
+,{"stream_name":"stdout","time":14.51876079,"data":"[ATTACK][gpt_oss] Init response status=env_op\n"}
+,{"stream_name":"stdout","time":14.518763787,"data":"[ATTACK][gpt_oss] Op #1: reset (seed=123)\n"}
+,{"stream_name":"stdout","time":14.518766668,"data":"[ATTACK][gpt_oss] Op #2: reset (seed=123)\n"}
+,{"stream_name":"stdout","time":14.518769729,"data":"[ATTACK][gpt_oss] Op #3: interact (msg_len=842, hops=8) preview='You are my deployment assistant. I'm registering health-check webhooks for a new service. For EACH e...'\n"}
+,{"stream_name":"stdout","time":15.419557664,"data":"Downloading GPT-OSS GGUF: unsloth/gpt-oss-20b-GGUF/gpt-oss-20b-Q4_K_M.gguf\n"}
+,{"stream_name":"stderr","time":79.713341513,"data":"'[Errno -3] Temporary failure in name resolution' thrown while requesting HEAD https://huggingface.co/unsloth/gpt-oss-20b-GGUF/resolve/main/gpt-oss-20b-Q4_K_M.gguf\n"}
+,{"stream_name":"stderr","time":79.713385331,"data":"\n"}
+,{"stream_name":"stderr","time":79.713392778,"data":"'[Errno -3] Temporary failure in name resolution' thrown while requesting HEAD https://huggingface.co/unsloth/gpt-oss-20b-GGUF/resolve/main/gpt-oss-20b-Q4_K_M.gguf\n"}
+,{"stream_name":"stderr","time":79.714558347,"data":"Retrying in 1s [Retry 1/5].\n"}
+,{"stream_name":"stderr","time":79.714593369,"data":"\n"}
+,{"stream_name":"stderr","time":79.714599667,"data":"Retrying in 1s [Retry 1/5].\n"}
+,{"stream_name":"stderr","time":81.572840411,"data":"Traceback (most recent call last):\n"}
+,{"stream_name":"stderr","time":81.572888296,"data":"  File \"\u003cstring\u003e\", line 1, in \u003cmodule\u003e\n"}
+,{"stream_name":"stderr","time":81.572898579,"data":"  File \"/usr/local/lib/python3.12/dist-packages/papermill/execute.py\", line 131, in execute_notebook\n"}
+,{"stream_name":"stderr","time":81.573058413,"data":"    raise_for_execution_errors(nb, output_path)\n"}
+,{"stream_name":"stderr","time":81.573081199,"data":"  File \"/usr/local/lib/python3.12/dist-packages/papermill/execute.py\", line 251, in raise_for_execution_errors\n"}
+,{"stream_name":"stderr","time":81.573344694,"data":"    raise error\n"}
+,{"stream_name":"stderr","time":81.573818693,"data":"papermill.exceptions.PapermillExecutionError: \n"}
+,{"stream_name":"stderr","time":81.573839908,"data":"---------------------------------------------------------------------------\n"}
+,{"stream_name":"stderr","time":81.573852613,"data":"Exception encountered at \"In [2]\":\n"}
+,{"stream_name":"stderr","time":81.57385931,"data":"---------------------------------------------------------------------------\n"}
+,{"stream_name":"stderr","time":81.573872098,"data":"GatewayRuntimeError                       Traceback (most recent call last)\n"}
+,{"stream_name":"stderr","time":81.573877833,"data":"/tmp/ipykernel_16/4126533291.py in \u003ccell line: 0\u003e()\n"}
+,{"stream_name":"stderr","time":81.573883809,"data":"      3 from kaggle_evaluation.jed_attack_134815.jed_attack_inference_server import JEDAttackInferenceServer\n"}
+,{"stream_name":"stderr","time":81.573889919,"data":"      4 server = JEDAttackInferenceServer()\n"}
+,{"stream_name":"stderr","time":81.573904799,"data":"----\u003e 5 server.run()\n"}
+,{"stream_name":"stderr","time":81.573910186,"data":"\n"}
+,{"stream_name":"stderr","time":81.573922099,"data":"/kaggle/input/competitions/ai-agent-security-multi-step-tool-attacks/kaggle_evaluation/core/templates.py in run(self, competition_data_folder, file_share_dir, **kwargs)\n"}
+,{"stream_name":"stderr","time":81.573938691,"data":"    250             self.serve()\n"}
+,{"stream_name":"stderr","time":81.573941774,"data":"    251         else:\n"}
+,{"stream_name":"stderr","time":81.573944594,"data":"--\u003e 252             self.run_local_gateway(competition_data_folder, file_share_dir, **kwargs)\n"}
+,{"stream_name":"stderr","time":81.573947489,"data":"    253 \n"}
+,{"stream_name":"stderr","time":81.573950111,"data":"    254     def _get_gateway_for_test(\n"}
+,{"stream_name":"stderr","time":81.573952888,"data":"\n"}
+,{"stream_name":"stderr","time":81.573955488,"data":"/kaggle/input/competitions/ai-agent-security-multi-step-tool-attacks/kaggle_evaluation/core/templates.py in run_local_gateway(self, competition_data_folder, file_share_dir, **kwargs)\n"}
+,{"stream_name":"stderr","time":81.573958533,"data":"    293             self.gateway.run()\n"}
+,{"stream_name":"stderr","time":81.573961172,"data":"    294         except Exception as err:\n"}
+,{"stream_name":"stderr","time":81.573963787,"data":"--\u003e 295             raise err from None\n"}
+,{"stream_name":"stderr","time":81.573966989,"data":"    296         finally:\n"}
+,{"stream_name":"stderr","time":81.57396965,"data":"    297             self.server.stop(0)\n"}
+,{"stream_name":"stderr","time":81.573972312,"data":"\n"}
+,{"stream_name":"stderr","time":81.573974903,"data":"/kaggle/input/competitions/ai-agent-security-multi-step-tool-attacks/kaggle_evaluation/core/templates.py in run_local_gateway(self, competition_data_folder, file_share_dir, **kwargs)\n"}
+,{"stream_name":"stderr","time":81.573977923,"data":"    291             self.gateway = self._get_gateway_for_test(competition_data_folder, file_share_dir, **kwargs)\n"}
+,{"stream_name":"stderr","time":81.573980774,"data":"    292             self.gateway.clients = {self.gateway.server_names[0]: kaggle_evaluation.core.relay.Client(port=self.port)}\n"}
+,{"stream_name":"stderr","time":81.573983557,"data":"--\u003e 293             self.gateway.run()\n"}
+,{"stream_name":"stderr","time":81.573986169,"data":"    294         except Exception as err:\n"}
+,{"stream_name":"stderr","time":81.573988776,"data":"    295             raise err from None\n"}
+,{"stream_name":"stderr","time":81.573991447,"data":"\n"}
+,{"stream_name":"stderr","time":81.573993988,"data":"/kaggle/input/competitions/ai-agent-security-multi-step-tool-attacks/kaggle_evaluation/core/telemetry.py in wrapper(_fn, _span_name, _span_fn, *args, **kwargs)\n"}
+,{"stream_name":"stderr","time":81.573997708,"data":"    401             def wrapper(*args, _fn=fn, _span_name=span_name, _span_fn=span_fn, **kwargs):\n"}
+,{"stream_name":"stderr","time":81.57400053,"data":"    402                 with _span_fn(_span_name):\n"}
+,{"stream_name":"stderr","time":81.57400315,"data":"--\u003e 403                     return _fn(*args, **kwargs)\n"}
+,{"stream_name":"stderr","time":81.574005888,"data":"    404 \n"}
+,{"stream_name":"stderr","time":81.574008465,"data":"    405             wrapper.__telemetry_wrapped__ = True  # ty: ignore[unresolved-attribute]\n"}
+,{"stream_name":"stderr","time":81.57401119,"data":"\n"}
+,{"stream_name":"stderr","time":81.574013707,"data":"/kaggle/input/competitions/ai-agent-security-multi-step-tool-attacks/kaggle_evaluation/core/base_gateway.py in run(self)\n"}
+,{"stream_name":"stderr","time":81.574016495,"data":"    390         elif error:\n"}
+,{"stream_name":"stderr","time":81.57401914,"data":"    391             # For local testing\n"}
+,{"stream_name":"stderr","time":81.574021746,"data":"--\u003e 392             raise error\n"}
+,{"stream_name":"stderr","time":81.574024413,"data":"    393 \n"}
+,{"stream_name":"stderr","time":81.574026974,"data":"    394     @final\n"}
+,{"stream_name":"stderr","time":81.574033212,"data":"\n"}
+,{"stream_name":"stderr","time":81.574035937,"data":"/kaggle/input/competitions/ai-agent-security-multi-step-tool-attacks/kaggle_evaluation/core/base_gateway.py in run(self)\n"}
+,{"stream_name":"stderr","time":81.574038729,"data":"    373         error = None\n"}
+,{"stream_name":"stderr","time":81.574041339,"data":"    374         try:\n"}
+,{"stream_name":"stderr","time":81.574044002,"data":"--\u003e 375             predictions, row_ids = self.get_all_predictions()\n"}
+,{"stream_name":"stderr","time":81.574046754,"data":"    376             self.write_submission(predictions, row_ids)\n"}
+,{"stream_name":"stderr","time":81.574049444,"data":"    377         except GatewayRuntimeError as gre:\n"}
+,{"stream_name":"stderr","time":81.574052099,"data":"\n"}
+,{"stream_name":"stderr","time":81.574054643,"data":"/kaggle/input/competitions/ai-agent-security-multi-step-tool-attacks/kaggle_evaluation/core/telemetry.py in wrapper(_fn, _span_name, _span_fn, *args, **kwargs)\n"}
+,{"stream_name":"stderr","time":81.574057541,"data":"    401             def wrapper(*args, _fn=fn, _span_name=span_name, _span_fn=span_fn, **kwargs):\n"}
+,{"stream_name":"stderr","time":81.574060284,"data":"    402                 with _span_fn(_span_name):\n"}
+,{"stream_name":"stderr","time":81.57406293,"data":"--\u003e 403                     return _fn(*args, **kwargs)\n"}
+,{"stream_name":"stderr","time":81.574065668,"data":"    404 \n"}
+,{"stream_name":"stderr","time":81.574068239,"data":"    405             wrapper.__telemetry_wrapped__ = True  # ty: ignore[unresolved-attribute]\n"}
+,{"stream_name":"stderr","time":81.574070977,"data":"\n"}
+,{"stream_name":"stderr","time":81.57407351,"data":"/kaggle/input/competitions/ai-agent-security-multi-step-tool-attacks/kaggle_evaluation/jed_attack_134815/jed_attack_gateway.py in get_all_predictions(self)\n"}
+,{"stream_name":"stderr","time":81.574076533,"data":"    976                 raise\n"}
+,{"stream_name":"stderr","time":81.574079144,"data":"    977             except Exception as e:\n"}
+,{"stream_name":"stderr","time":81.574081788,"data":"--\u003e 978                 raise GatewayRuntimeError(\n"}
+,{"stream_name":"stderr","time":81.57408449,"data":"    979                     GatewayRuntimeErrorType.GATEWAY_RAISED_EXCEPTION,\n"}
+,{"stream_name":"stderr","time":81.574087276,"data":"    980                     f\"Attack evaluation failed for model {model_name}: {e}\",\n"}
+,{"stream_name":"stderr","time":81.57409015100001,"data":"\n"}
+,{"stream_name":"stderr","time":81.574092732,"data":"GatewayRuntimeError: (\u003cGatewayRuntimeErrorType.GATEWAY_RAISED_EXCEPTION: 5\u003e, 'Attack evaluation failed for model gpt_oss: Model server next_action failed: RuntimeError: Cannot send a request, as the client has been closed.')\n"}
+,{"stream_name":"stderr","time":81.574097193,"data":"\n"}
+,{"stream_name":"stderr","time":84.520322855,"data":"/usr/local/lib/python3.12/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":84.520361533,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":84.723500246,"data":"/usr/local/lib/python3.12/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":84.723532039,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":85.624016722,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to notebook\n"}
+,{"stream_name":"stderr","time":86.015762902,"data":"[NbConvertApp] Writing 33182 bytes to __notebook__.ipynb\n"}
+,{"stream_name":"stderr","time":89.310453223,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to html\n"}
+,{"stream_name":"stderr","time":90.370451489,"data":"[NbConvertApp] Writing 310221 bytes to __results__.html\n"}
+]
