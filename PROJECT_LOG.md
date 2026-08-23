@@ -287,3 +287,21 @@ leaderboard rank. Our body of work (code-grounded predicate+guard analysis, guar
 testing, the throughput-vs-severity scoring analysis, the persistent-provenance robustness proof,
 Go-Explore diverse portfolio) is exactly what that award rewards. PROJECT_LOG is ~90% of a submittable
 note. Strongly recommend writing + submitting one — a high-probability win independent of rank.
+
+---
+## 15. Forge throughput optimization (2026-08-23, GPU-validated both models)
+
+Since private raw = Σ(severity over firing candidates), decode speed = score linearly under a taint
+guard. Measured on the real models (fresh RTX 5090, source-built llama_cpp for no-AVX512 Blackwell):
+
+| model | PLAIN | FORGE | compliance | effect |
+|---|---|---|---|---|
+| gpt_oss | 0.48 s/interaction | **0.17 s** | 10/10 both | **2.8× faster** |
+| gemma   | 0.33 s | 0.33 s | 8/8 both | exactly neutral (forge inert) |
+
+slot4 v4 adds a per-model **forge probe**: in run() it compares forge-vs-plain fire rate on the live
+model and enables the harmony forge only if it fires ≥ plain (each model gets its own run() → self-tunes).
+End-to-end verified: probe sets `_FORGE_ON=True` on both models, all emitted candidates carry the forge,
+gpt_oss row throughput ~3×, gemma unaffected. Under taint this lifts gpt_oss_private ~15 → ~40
+(gemma_private unchanged ~15). slot1 (exfil) already uses the forge. Kernel v4 pushed; submit when the
+pending queue frees.
