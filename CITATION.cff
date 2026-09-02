@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it using these metadata."
+title: "AI Agent Security — Multi-Step Tool Attacks"
+type: software
+authors:
+  - family-names: Yaqoob
+    given-names: Tayyab
+repository-code: "https://github.com/tayyub-ai/ai-agent-security-multi-step-tool-attacks"
+url: "https://www.kaggle.com/competitions/ai-agent-security-multi-step-tool-attacks"
+license: MIT
+version: 1.0.0
+date-released: 2026-09-02
+abstract: >-
+  A bronze-medal, replay-validated red-team system for reproducible multi-step
+  failures in tool-using AI agents, developed for Kaggle's authorized offline
+  AI Agent Security benchmark.

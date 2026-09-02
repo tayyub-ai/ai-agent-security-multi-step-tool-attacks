@@ -1,0 +1,42 @@
+{
+  "providers": [
+    {
+      "name": "local-gpt-oss",
+      "enabled": false,
+      "url": "http://127.0.0.1:11434/v1/chat/completions",
+      "model": "gpt-oss:20b",
+      "max_completion_tokens": 5000
+    },
+    {
+      "name": "local-deepseek-r1-7b",
+      "enabled": false,
+      "url": "http://127.0.0.1:11434/v1/chat/completions",
+      "model": "deepseek-r1:7b",
+      "max_completion_tokens": 5000
+    },
+    {
+      "name": "local-qwen-coder-7b",
+      "enabled": false,
+      "url": "http://127.0.0.1:11434/v1/chat/completions",
+      "model": "qwen2.5-coder:7b",
+      "max_completion_tokens": 5000
+    },
+    {
+      "name": "deepseek-v4-pro",
+      "enabled": false,
+      "url": "https://api.deepseek.com/chat/completions",
+      "model": "deepseek-v4-pro",
+      "api_key_env": "DEEPSEEK_API_KEY",
+      "max_completion_tokens": 8000
+    },
+    {
+      "name": "kimi-k2-6",
+      "enabled": false,
+      "url": "https://api.moonshot.ai/v1/chat/completions",
+      "model": "kimi-k2.6",
+      "api_key_env": "MOONSHOT_API_KEY",
+      "token_parameter": "max_completion_tokens",
+      "max_completion_tokens": 8000
+    }
+  ]
+}

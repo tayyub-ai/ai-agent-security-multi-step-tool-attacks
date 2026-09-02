@@ -9,3 +9,7 @@ __pycache__/
 *.zip
 err.txt
 .DS_Store
+.env
+research/model_panel.local.json
+research/model_panel_results/
+kaggle_upload/
